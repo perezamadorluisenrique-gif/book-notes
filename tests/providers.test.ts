@@ -11,7 +11,7 @@ test('Open Library search: fields of a full record', () => {
   assert.equal(hobbit.title, 'The Hobbit');
   assert.deepEqual(hobbit.authors, ['J.R.R. Tolkien']);
   assert.equal(hobbit.author, 'J.R.R. Tolkien');
-  assert.equal(hobbit.publisher, 'Houghton Mifflin');
+  assert.equal(hobbit.publisher, '', 'several editions: no publisher is picked at random');
   assert.equal(hobbit.publishDate, '1937');
   assert.equal(hobbit.totalPage, 366);
   assert.equal(hobbit.isbn10, '0618260307');

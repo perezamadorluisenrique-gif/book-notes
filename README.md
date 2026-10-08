@@ -8,7 +8,7 @@ Book Notes is a successor to [Book Search](https://github.com/anpigon/obsidian-b
 
 - **Create book note** opens a search window. Type a title, an author or an ISBN (10 or 13 digits, with or without hyphens). Each result shows a cover thumbnail, the title, the authors and the year. Pick one and the note is created in your book folder and opened.
 - **Insert book metadata into this note** searches (starting from the note's name) and fills the properties of the note you are in. Properties that already have a value are never changed, unless you turn on "Overwrite existing properties". `Title` and `title` count as the same property.
-- **Two providers.** [Open Library](https://openlibrary.org) is the default: no key, no quota. [Google Books](https://books.google.com) works without a key too; add an API key in the settings if you search a lot.
+- **Two providers.** [Open Library](https://openlibrary.org) is the default: no key, no quota. [Google Books](https://books.google.com) can be used without a key, but Google often refuses keyless requests ("quota exceeded"); a free API key in the settings avoids that.
 - **ISBN search goes straight to the ISBN endpoint**, so it finds that edition rather than a list of guesses.
 - **Cover images** can be saved in your vault (Settings, Covers). `{{localCoverImage}}` and the `cover` property then point to the file.
 - **If the note exists, it is opened, not overwritten.**

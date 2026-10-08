@@ -65,7 +65,10 @@ export function parseSearch(json: unknown): Book[] {
     book.subtitle = str(doc.subtitle);
     book.authors = strings(doc.author_name);
     book.categories = strings(doc.subject).slice(0, MAX_CATEGORIES);
-    book.publisher = strings(doc.publisher)[0] ?? '';
+    // A search hit is a work, and its publishers are those of every edition in no
+    // order, so only a single one says something about the book.
+    const publishers = [...new Set(strings(doc.publisher))];
+    book.publisher = publishers.length === 1 ? publishers[0] : '';
     const year = doc.first_publish_year;
     book.publishDate = typeof year === 'number' ? String(year) : '';
     const pages = doc.number_of_pages_median;
@@ -107,7 +110,8 @@ export function parseIsbnData(json: unknown, isbn: string): Book[] {
   book.totalPage = typeof pages === 'number' && pages > 0 ? pages : '';
   const ids = (entry.identifiers ?? {}) as Record<string, unknown>;
   Object.assign(book, pickIsbns([...strings(ids.isbn_10), ...strings(ids.isbn_13), isbn]));
-  book.link = str(entry.url) ? (str(entry.url).startsWith('http') ? str(entry.url) : `${BASE}${str(entry.url)}`) : '';
+  const url = str(entry.url);
+  book.link = url ? (url.startsWith('http') ? url.replace(/^http:\/\//i, 'https://') : `${BASE}${url}`) : '';
   const cover = (entry.cover ?? {}) as Record<string, unknown>;
   book.coverSmallUrl = str(cover.small);
   book.coverUrl = str(cover.medium) || book.coverSmallUrl;
