@@ -1,0 +1,23 @@
+{
+  "ISBN:9780547928227": {
+    "url": "https://openlibrary.org/books/OL25392594M/The_Hobbit",
+    "key": "/books/OL25392594M",
+    "title": "The Hobbit",
+    "subtitle": "or There and Back Again",
+    "authors": [{ "url": "https://openlibrary.org/authors/OL26320A/J.R.R._Tolkien", "name": "J.R.R. Tolkien" }],
+    "identifiers": {
+      "isbn_10": ["054792822X"],
+      "isbn_13": ["9780547928227"],
+      "openlibrary": ["OL25392594M"]
+    },
+    "publishers": [{ "name": "Houghton Mifflin Harcourt" }],
+    "publish_date": "September 18, 2012",
+    "number_of_pages": 300,
+    "subjects": [{ "name": "Fantasy fiction", "url": "x" }, { "name": "Dragons", "url": "y" }],
+    "cover": {
+      "small": "https://covers.openlibrary.org/b/id/8406786-S.jpg",
+      "medium": "https://covers.openlibrary.org/b/id/8406786-M.jpg",
+      "large": "https://covers.openlibrary.org/b/id/8406786-L.jpg"
+    }
+  }
+}
