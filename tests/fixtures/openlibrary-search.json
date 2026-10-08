@@ -1,0 +1,28 @@
+{
+  "numFound": 3,
+  "start": 0,
+  "numFoundExact": true,
+  "docs": [
+    {
+      "key": "/works/OL262758W",
+      "title": "The Hobbit",
+      "author_name": ["J.R.R. Tolkien"],
+      "first_publish_year": 1937,
+      "publisher": ["Houghton Mifflin", "Allen & Unwin"],
+      "isbn": ["0618260307", "9780618260300", "0547928223", "9780547928227", "not-an-isbn"],
+      "cover_i": 14627509,
+      "number_of_pages_median": 366,
+      "subject": ["Fantasy", "Dragons", "Hobbits", "Middle Earth (Imaginary place)", "Fiction", "Quests", "Wizards"]
+    },
+    {
+      "key": "/works/OL1234W",
+      "title": "  Notes on The Hobbit  ",
+      "subtitle": "A reader's guide",
+      "author_name": ["Ada Reader", "Ada Reader", "Ben Critic"]
+    },
+    {
+      "key": "/works/OL9W",
+      "author_name": ["Nobody"]
+    }
+  ]
+}

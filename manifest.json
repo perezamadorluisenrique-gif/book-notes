@@ -1,0 +1,10 @@
+{
+  "id": "book-notes",
+  "name": "Book Notes",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.4",
+  "description": "Create book notes from Open Library or Google Books, with cover images, ISBN search and Book Search compatible templates.",
+  "author": "Siulved54",
+  "authorUrl": "https://github.com/perezamadorluisenrique-gif",
+  "isDesktopOnly": false
+}
